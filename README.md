@@ -26,7 +26,7 @@ lua/
 ✅ Lazy-loaded plugins for performance
 ✅ LSP, formatting, and linting
 ✅ Custom keybindings for better workflow
-✅ Theme: [Your colorscheme name]
+✅ Theme: Tokyonight(Tweaked for my liking)
 ✅ Compatible with Windows/Linux/Mac
 
 
