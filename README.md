@@ -82,7 +82,7 @@ example.lua → Just for playing with ideas
 
 📸 Screenshots (Optional)
 
-> Drop screenshots of your setup here!
+> Will update soon
 
 
 
