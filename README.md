@@ -45,7 +45,7 @@ Nerd Font (recommended)
 
 Installation:
 
-git clone https://github.com/blake-tron/lazyvim-config.git ~/.config/nvim
+git clone https://github.com/lazy-blake/lazyvim-config.git ~/.config/nvim
 
 Then launch:
 
