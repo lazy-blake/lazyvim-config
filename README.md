@@ -135,11 +135,7 @@ This reveals optional UI plugins, tools, and extras you can selectively enable.
 
 ## 📸 Screenshots
 
-Include images here:
-
-```markdown
-![dashboard](./screenshots/dashboard.png)
-```
+coming soone
 
 ---
 
@@ -158,22 +154,3 @@ Apache‑2.0 — 🚀 Use it, modify it, share it!
 ---
 
 <sub>Feel free to ⭐ if you like this config, or open issues/PRs for suggestions!</sub>
-
-````
-
----
-
-### ✅ Done?
-
-1. Paste this into `README.md`
-2. Customize your GitHub username and repository link
-3. Optionally add screenshots in `./screenshots/`
-4. Commit and push:
-
-```bash
-git add README.md
-git commit -m "Update README with usage instructions"
-git push
-````
-
-Let me know if you want help adding badges, GitHub Actions, or customizing keymapping sections!
