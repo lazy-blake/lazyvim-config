@@ -9,7 +9,6 @@ This is a blazing-fast, minimalist, and modern Neovim configuration built on top
 
 ## 📂 Folder Structure
 
-```text
 lua/
 ├── config/              # Base config (keymaps, options, autocmds)
 ├── custom/              # My custom additions
