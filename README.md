@@ -32,7 +32,7 @@ Make sure you have:
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 
-git clone https://github.com/YOUR_USERNAME/lazyvim-config.git ~/.config/nvim
+git clone https://github.com/lazy-blake/lazyvim-config.git ~/.config/nvim
 ````
 
 ### 3. Launch & Bootstrap
