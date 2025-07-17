@@ -37,7 +37,7 @@
 > - `git`, `curl`, `ripgrep`, `fd` installed
 
 ### 1. Backup your current Neovim config (optional)
-```bash
+
 mv ~/.config/nvim ~/.config/nvim.backup
 
 2. Clone this config
@@ -103,4 +103,3 @@ Neovim
   <img src="https://github-readme-stats.vercel.app/api?username=lazy-blake&show_icons=true&theme=tokyonight" width="400" />
   <img src="https://streak-stats.demolab.com?user=lazy-blake&theme=tokyonight" width="400"/>
 </p>
-```
