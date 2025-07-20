@@ -1,156 +1,105 @@
-# 🧠 lazyvim-config
+# 💤 lazy-blake/lazyvim-config
 
-My personal Neovim setup based on **[LazyVim](https://github.com/LazyVim/LazyVim)**.  
-Blazing fast, highly customizable, and ready for productivity.
+> ⚡ A clean, fast, and aesthetic Neovim configuration powered by [LazyVim](https://github.com/LazyVim/LazyVim), customized for minimalism, productivity, and beauty.
 
----
-
-## ⚡ Features
-
-- Pre-configured IDE-like environment via `lazy.nvim`
-- Smart defaults for LSP, Treesitter, Telescope, Git, and more
-- Custom keymaps, options, and Autocmds in `lua/config/`
-- Easy plugin extensions in `lua/plugins/`
-- Fully documented and modular setup
+![Screenshot](https://raw.githubusercontent.com/lazy-blake/lazyvim-config/main/assets/preview.png)
 
 ---
 
-## 🚀 Quick Start
+## 🌟 Features
 
-### 1. Prerequisites
+- 🌓 **Tokyo Night theme** for a beautiful dark UI
+- 🧠 Built-in LSP with Mason, Neodev, and formatting tools
+- 🔍 Fuzzy finding with `fzf-lua`
+- ✍️ GitHub Copilot support
+- 📃 Rich statusline with `lualine`
+- 💡 Lazy-loaded plugins for faster startup
 
-Make sure you have:
+---
 
-- Neovim **>= 0.9.0**
-- Git **>= 2.19.0**
-- A **Nerd Font** installed for icons
-- A C compiler for Treesitter
+## 📦 Plugins Highlight
 
-### 2. Backup & Install
+| Plugin           | Purpose                        |
+|------------------|--------------------------------|
+| `tokyonight`     | Colorscheme                    |
+| `nvim-lspconfig` | Language Server Protocol (LSP) |
+| `copilot.lua`    | GitHub Copilot integration     |
+| `neotest`        | Test runner                    |
+| `fzf-lua`        | Fuzzy finder                   |
+| `lualine.nvim`   | Statusline                     |
 
-```bash
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
+---
 
-git clone https://github.com/lazy-blake/lazyvim-config.git ~/.config/nvim
-````
+## 🚀 Installation
 
-### 3. Launch & Bootstrap
+> 📌 Prerequisites:
+> - Neovim 0.9+
+> - `git`, `curl`, `ripgrep`, `fd` installed
 
-Run Neovim:
+### 1. Backup your current Neovim config (optional)
 
-```bash
+mv ~/.config/nvim ~/.config/nvim.backup
+
+2. Clone this config
+
+git clone https://github.com/lazy-blake/lazyvim-config ~/.config/nvim
+
+3. Launch Neovim
+
 nvim
-```
 
-It will auto-install core plugins. Be patient — first startup may take a minute.
+LazyVim will automatically install the required plugins.
 
-### 4. Check Your Setup
-
-Within Neovim:
-
-```vim
-:checkhealth
-```
-
-Fix any leftover warnings.
 
 ---
 
-## 🗂 Repository Structure
+⚙️ Customization
 
-```text
-~/.config/nvim/
-├── init.lua               # LazyVim entry point
-├── lua/
-│   ├── config/
-│   │   ├── options.lua    # Custom vim.opt settings
-│   │   ├── keymaps.lua    # Extra key mappings
-│   │   ├── autocmds.lua   # Auto commands
-│   │   └── lazy.lua       # Lazy.nvim plugin config
-│   └── plugins/           # Your own plugin specs
-├── lazy-lock.json         # Locked plugin versions
-├── stylua.toml            # Formatting rules
-└── lazyvim.json           # Optional LazyVim overrides
-```
+All custom settings are under:
+
+lua/
+├── config/     # Options, keymaps, autocmds
+└── plugins/    # Plugin specs and lazy-loading
+
+To change the theme:
+
+LazyVim.setup({ colorscheme = "tokyonight" })
+
+To add a plugin, just drop a Lua file in lua/plugins/ with a plugin spec.
+
 
 ---
 
-## ✏️ Customize Plugins
+📸 Screenshots
 
-To add or override plugins:
+> coming soon...
 
-1. Edit or create a file in `lua/plugins/`, e.g.:
 
-   ```lua
-   return {
-     { "numToStr/Comment.nvim", opts = {} },
-     { "stevearc/oil.nvim", cmd = "Oil" },
-   }
-   ```
-2. Restart Neovim or run:
-
-   ```vim
-   :Lazy sync
-   ```
 
 ---
 
-## 🎨 Tip: LazyExtras
+🤝 Contributing
 
-Inside Neovim, run:
+Got ideas or improvements? Feel free to open a PR or issue.
 
-```vim
-:LazyExtras
-```
-
-This reveals optional UI plugins, tools, and extras you can selectively enable.
 
 ---
 
-## 🔧 Maintenance
+🙌 Acknowledgements
 
-* **Sync new plugins**:
+LazyVim
 
-  ```vim
-  :Lazy sync
-  ```
-* **Check configuration health**:
+NvChad
 
-  ```vim
-  :checkhealth
-  ```
-* **Update plugins**:
+Neovim
 
-  ```vim
-  :Lazy update
-  ```
-* **Format code** (if configured):
 
-  ```vim
-  :PackerFormat
-  ```
 
 ---
 
-## 📸 Screenshots
+📊 GitHub Stats
 
-coming soone
-
----
-
-## 📚 Resources
-
-* [LazyVim Docs](https://lazyvim.github.io)
-* [lazy.nvim repo](https://github.com/folke/lazy.nvim)
-* [LazyVim starter template](https://github.com/LazyVim/starter)
-
----
-
-## 📝 License
-
-Apache‑2.0 — 🚀 Use it, modify it, share it!
-
----
-
-<sub>Feel free to ⭐ if you like this config, or open issues/PRs for suggestions!</sub>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lazy-blake&show_icons=true&theme=tokyonight" width="400" />
+  <img src="https://streak-stats.demolab.com?user=lazy-blake&theme=tokyonight" width="400"/>
+</p>
