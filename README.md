@@ -85,7 +85,7 @@ mkdir $env:LOCALAPPDATA\nvim\data\ascii
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Preview
 
 > <img width="1898" height="1057" alt="Screenshot 2025-07-20 142620" src="https://github.com/user-attachments/assets/7be76888-1b94-4dde-b4ac-fb06cfe3f612" />
 
