@@ -1,105 +1,119 @@
-# 💤 lazy-blake/lazyvim-config
+# ⚡ lazy-blake's LazyVim Config
 
-> ⚡ A clean, fast, and aesthetic Neovim configuration powered by [LazyVim](https://github.com/LazyVim/LazyVim), customized for minimalism, productivity, and beauty.
+[![Windows](https://img.shields.io/badge/OS-Windows-00adef?logo=windows\&logoColor=white)](https://microsoft.com/windows)
+[![Neovim](https://img.shields.io/badge/Neovim-0.9+-57A143?logo=neovim\&logoColor=white)](https://neovim.io)
+[![Status](https://img.shields.io/badge/status-Customized-success?style=flat-square\&color=brightgreen)](#)
+[![License](https://img.shields.io/github/license/lazy-blake/lazyvim-config?color=blue)](LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/lazy-blake/lazyvim-config?style=social)](https://github.com/lazy-blake/lazyvim-config)
+[![Issues](https://img.shields.io/github/issues/lazy-blake/lazyvim-config)](https://github.com/lazy-blake/lazyvim-config/issues)
 
-![Screenshot](https://raw.githubusercontent.com/lazy-blake/lazyvim-config/main/assets/preview.png)
-
----
-
-## 🌟 Features
-
-- 🌓 **Tokyo Night theme** for a beautiful dark UI
-- 🧠 Built-in LSP with Mason, Neodev, and formatting tools
-- 🔍 Fuzzy finding with `fzf-lua`
-- ✍️ GitHub Copilot support
-- 📃 Rich statusline with `lualine`
-- 💡 Lazy-loaded plugins for faster startup
+> ⚡ A blazing-fast, aesthetic, and highly customized LazyVim setup tailored for Windows power users.
 
 ---
 
-## 📦 Plugins Highlight
+## ✨ Features
 
-| Plugin           | Purpose                        |
-|------------------|--------------------------------|
-| `tokyonight`     | Colorscheme                    |
-| `nvim-lspconfig` | Language Server Protocol (LSP) |
-| `copilot.lua`    | GitHub Copilot integration     |
-| `neotest`        | Test runner                    |
-| `fzf-lua`        | Fuzzy finder                   |
-| `lualine.nvim`   | Statusline                     |
+* 🖥️ **Snacks.nvim Dashboard** – Fully custom dual-pane layout with animated ASCII image integration
+* 🎨 **Gruvbox Theme** – Clean and modern aesthetic across the UI
+* 🌈 **Rainbow Delimiters** – Enhanced syntax visibility for nested code
+* 🪄 **Trouble.nvim** – Visual diagnostics with icon-enhanced interface
+* 💡 **Icons + Terminal Image Support** – Thanks to `ascii-image-converter`
+* ⚙️ Fully optimized for **Windows** (PowerShell support included)
+* 🧠 **LSP & Autocompletion** – Out-of-the-box support for major languages with Mason
 
 ---
 
-## 🚀 Installation
+## 🧩 Plugin Stack (Highlights)
 
-> 📌 Prerequisites:
-> - Neovim 0.9+
-> - `git`, `curl`, `ripgrep`, `fd` installed
+| Plugin                            | Purpose                        |
+| --------------------------------- | ------------------------------ |
+| `folke/lazy.nvim`                 | Lazy plugin manager            |
+| `folke/snacks.nvim`               | UI dashboard (Snacks UI)       |
+| `folke/trouble.nvim`              | Diagnostics sidebar            |
+| `HiPhish/rainbow-delimiters.nvim` | Bracket highlighting           |
+| `ascii-image-converter`           | Terminal-based image rendering |
+| `neovim/nvim-lspconfig`           | Built-in LSP support           |
+| `williamboman/mason.nvim`         | LSP/DAP installer              |
 
-### 1. Backup your current Neovim config (optional)
+---
 
-mv ~/.config/nvim ~/.config/nvim.backup
+## 🛠 Installation
 
-2. Clone this config
+### 1. 📦 Prerequisites
 
-git clone https://github.com/lazy-blake/lazyvim-config ~/.config/nvim
+Make sure the following are installed:
 
-3. Launch Neovim
+* [Neovim 0.9+](https://neovim.io)
+* [Git](https://git-scm.com/downloads)
+* [PowerShell 7+](https://github.com/PowerShell/PowerShell)
+* [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter)
 
+```powershell
+scoop install git neovim
+scoop install gcc  # required by some LSP servers
+scoop install ascii-image-converter
+```
+
+### 2. 🚀 Setup LazyVim Config
+
+```powershell
+cd $env:USERPROFILE\AppData\Local
+git clone https://github.com/lazy-blake/lazyvim-config.git nvim
+```
+
+Launch Neovim:
+
+```powershell
 nvim
+```
 
-LazyVim will automatically install the required plugins.
+LazyVim will bootstrap and install everything.
+
+---
+
+## 🖼 Custom ASCII Image Setup
+
+To display random ASCII art in your Snacks dashboard:
+
+1. Install [`ascii-image-converter`](https://github.com/TheZoraiz/ascii-image-converter)
+2. Add PNG or JPG files to `~/AppData/Local/nvim/data/ascii`
+3. It will automatically pick and render a new image each time you open Neovim
+
+```powershell
+mkdir $env:LOCALAPPDATA\nvim\data\ascii
+```
+
+---
+
+## 📸 Preview
+
+> <img width="1898" height="1057" alt="Screenshot 2025-07-20 142620" src="https://github.com/user-attachments/assets/7be76888-1b94-4dde-b4ac-fb06cfe3f612" />
 
 
 ---
 
-⚙️ Customization
+## 🧠 Tips
 
-All custom settings are under:
-
-lua/
-├── config/     # Options, keymaps, autocmds
-└── plugins/    # Plugin specs and lazy-loading
-
-To change the theme:
-
-LazyVim.setup({ colorscheme = "tokyonight" })
-
-To add a plugin, just drop a Lua file in lua/plugins/ with a plugin spec.
-
+* Use `:checkhealth` to verify LSP and plugin health
+* Add more ASCII art to increase dashboard variety
+* Customize your keybindings in `lua/config/keymaps.lua`
+* Use `:Lazy` to manage plugins
 
 ---
 
-📸 Screenshots
+## 🙌 Credits
 
-> coming soon...
-
-
-
----
-
-🤝 Contributing
-
-Got ideas or improvements? Feel free to open a PR or issue.
-
+* [LazyVim](https://github.com/LazyVim/LazyVim) by folke
+* [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter)
+* [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
 
 ---
 
-🙌 Acknowledgements
+## 📬 Contact
 
-LazyVim
-
-NvChad
-
-Neovim
-
-
+* GitHub: [lazy-blake](https://github.com/lazy-blake)
+* Feel free to fork, star, or raise an issue!
 
 ---
 
-📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lazy-blake&show_icons=true&theme=tokyonight" width="400" />
-  <img src="https://streak-stats.demolab.com?user=lazy-blake&theme=tokyonight" width="400"/>
-</p>
+> ⚙️ Crafted with 💻 on Windows for Neovim lovers.
