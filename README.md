@@ -105,7 +105,7 @@ mkdir $env:LOCALAPPDATA\nvim\data\ascii
 
 * [LazyVim](https://github.com/LazyVim/LazyVim) by folke
 * [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter)
-* [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+* [gruvbox](https://github.com/morhetz/gruvbox)
 
 ---
 
